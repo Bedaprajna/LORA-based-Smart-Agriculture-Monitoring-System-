@@ -51,8 +51,9 @@ A web-based IoT system using LoRa wireless technology, Python, MySQL, and Flask 
 
 ## Demo
 
-(Add a screenshot if you have one!)
-![dashboard-screenshot](demo_screenshot.png)
+
+![dashboard-screenshot](<img width="1366" height="768" alt="Screenshot (31)" src="https://github.com/user-attachments/assets/3a1c5480-bb24-447f-89ff-60770fe83ff3" />
+)
 
 ---
 
