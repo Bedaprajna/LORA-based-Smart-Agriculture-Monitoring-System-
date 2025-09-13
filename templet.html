@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sensor Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fa;
+      margin: 40px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    table {
+      margin: auto;
+      border-collapse: collapse;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.04);
+    }
+    th, td {
+      border: 1px solid #b6c2d1;
+      padding: 12px 18px;
+      text-align: center;
+    }
+    th {
+      background: #4f8ef7;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+    tr:nth-child(even) {
+      background: #f1f7fe;
+    }
+  </style>
+</head>
+<body>
+  <h1>Recent Sensor Readings</h1>
+  <table id="sensorTable">
+    <tr>
+      <th>Node</th>
+      <th>Soil Moisture</th>
+      <th>Temperature</th>
+      <th>Timestamp</th>
+    </tr>
+  </table>
+  <script>
+    // Example hardcoded data
+    const data = [
+      { node: "node1", soil: 523.2, temp: 23.01, timestamp: "2025-09-13 20:15:00" },
+      { node: "node2", soil: 510.6, temp: 22.79, timestamp: "2025-09-13 20:16:00" },
+      { node: "node1", soil: 534.8, temp: 23.40, timestamp: "2025-09-13 20:17:00" }
+    ];
+
+    // Get the table
+    const table = document.getElementById('sensorTable');
+
+    // Add rows for each sensor record
+    data.forEach(row => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td>${row.node}</td>
+        <td>${row.soil}</td>
+        <td>${row.temp}</td>
+        <td>${row.timestamp}</td>
+      `;
+      table.appendChild(tr);
+    });
+  </script>
+</body>
+</html>
