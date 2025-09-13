@@ -45,7 +45,7 @@ A web-based IoT system using LoRa wireless technology, Python, MySQL, and Flask 
 - Run table creation3.py to create the readings table
 4. *Run the data sender and data receiver scripts* as described above
 5. *Start the Flask web dashboard:*
-  Open http://127.0.0.1:5000/ in your browser
+  Open in your browser
 
 ---
 
